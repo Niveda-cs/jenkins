@@ -11,7 +11,7 @@ pipeline {
 
         stage('Setup') {
             steps {
-                bat 'python -m venv venv'
+                bat '"C:\\Users\\acer\\AppData\\Local\\Python\\bin\\python.exe" -m venv venv'
                 bat 'venv\\Scripts\\python.exe -m pip install -r requirements.txt'
             }
         }
